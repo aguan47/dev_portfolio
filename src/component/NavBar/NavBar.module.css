@@ -53,7 +53,7 @@
     font-family: 'Futura';
 }
 
-.NavBar ul li {
+.NavBar ul a li {
     padding: 0em 1em 1.5em 0em;
     border-left: 3px solid primary-red;
     cursor: pointer;
@@ -70,13 +70,18 @@
     top: -5px;
 }
 
-.NavBar ul .ItemSpan {
+.Items {
+    color: black;
+    text-decoration: none;
+}
+
+.NavBar ul .Items {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
 
-.NavBar ul:hover .ItemSpan {
+.NavBar ul:hover .Items {
     visibility: visible;
     opacity: 1;
 }

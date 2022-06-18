@@ -8,13 +8,15 @@ const items = ["HOME", "ABOUT ME", "PROJECTS", "EXPERIENCE", "EDUCATION", "CONTA
 
 
 const NavBar = ({setActiveItem, active}) => {
-    const navBarItems = items.map(item => {
+    const navBarItems = items.map((item, i) => {
         const listClass = (item === active) ? classes.Active : classes.NavBarItem;
 
         return(
-            <li className={listClass} key={item} onClick={e => setActiveItem(item)}>
-                <span className={classes.ItemSpan}>{item}</span>
-            </li>
+            <a href={`#${item}`}>
+                <li className={listClass} key={i} onClick={e => setActiveItem(item)}>
+                    <span className={classes.Items}>{item}</span>
+                </li>
+            </a>
         )
     });
 

@@ -2,7 +2,7 @@ import React from "react";
 import classes from './Container.module.css';
 
 const Container = ({children}) => {
-    return(
+    return (
         <div className={classes.Container}>
             {children}
         </div>

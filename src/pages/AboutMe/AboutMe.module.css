@@ -1,0 +1,28 @@
+.AboutMe {
+    grid-column: 3/4;
+}
+
+.Header {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: "Futura Bold";
+}
+
+.AboutMe p {
+    width: 90%;
+    margin: 2em;
+    font-size: 1.4rem;
+    font-family: "Futura Thin";
+}
+
+.AboutMe p > span {
+    font-family: "Futura";
+}
+
+.AboutMe p > a {
+    font-family: "Futura";
+}
+
+.AboutMe p > a:visited {
+    color: black;
+}
