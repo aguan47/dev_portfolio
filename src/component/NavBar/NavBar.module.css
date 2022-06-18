@@ -1,0 +1,94 @@
+@value colors: "../../colors.css";
+@value primary-red from colors;
+
+
+.NavBar {
+    grid-column: 1/2;       /* From Container.js = grid system */
+    grid-row: 2/3;       /* From Container.js = grid system */
+    align-self: flex-end;
+    height: 100vh;
+    position: sticky;
+    align-self: flex-end;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.NavBar ul {
+    list-style: none;
+    font-family: 'Futura Thin';
+}
+
+.NavBarItem::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid primary-red;
+    position: relative;
+    top: 0%;
+    right: 10%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.NavBarItem:last-child::before {
+    right: 9%;
+}
+
+.Active::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: primary-red;
+    border: 2px solid primary-red;
+    position: relative;
+    top: 0%;
+    right: 10%;
+    border-radius: 50%;
+    display: inline-block;
+    transform: 0.5s ease;
+}
+
+.Active {
+    font-family: 'Futura';
+}
+
+.NavBar ul li {
+    padding: 0em 1em 1.5em 0em;
+    border-left: 3px solid primary-red;
+    cursor: pointer;
+}
+
+.NavBar ul li:last-child {
+    border-left: none;
+    margin: 0 1em 0 1px;
+}
+
+.NavBar ul li > span {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+
+.NavBar ul .ItemSpan {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.NavBar ul:hover .ItemSpan {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 1920px) {
+    .Active::before {
+        right: 10%;
+    }
+
+    .NavBarItem::before {
+        right: 10%;
+    }
+}
