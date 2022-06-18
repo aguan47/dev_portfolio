@@ -1,0 +1,39 @@
+@value colors: "../../colors.css";
+@value primary-red from colors;
+
+
+.Home {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.HomeDetails h1 {
+    text-align: center;
+    font-size: 7.5rem;
+    line-height: 1rem;
+    color: primary-red;
+    font-family: "Futura";
+}
+
+.HomeDetails p {
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.ScrollDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    margin: 2.5em;
+}
+
+.ScrollDown p {
+    font-size: 0.75rem;
+    letter-spacing: 0.4rem;
+}

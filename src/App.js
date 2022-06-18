@@ -1,6 +1,8 @@
+import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Container from './component/Container/Container';
 import NavBar from './component/NavBar/NavBar';
+import Home from './pages/Home/Home';
 
 
 function App() {
@@ -8,9 +10,12 @@ function App() {
 
 
   return (
-    <Container>
+    <>
       <NavBar active={activeNavBar} setActiveItem={setActiveNavBar}/>
-    </Container>
+      <AnimatePresence>
+        <Home/>
+      </AnimatePresence>
+    </>
   );
 }
 

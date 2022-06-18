@@ -3,20 +3,19 @@
 
 
 .NavBar {
-    grid-column: 1/2;       /* From Container.js = grid system */
-    grid-row: 2/3;       /* From Container.js = grid system */
-    align-self: flex-end;
-    height: 100vh;
-    position: sticky;
-    align-self: flex-end;
-    bottom: 0;
     display: flex;
     align-items: flex-end;
+    width: max-content;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
 }
 
 .NavBar ul {
     list-style: none;
     font-family: 'Futura Thin';
+    position: sticky;
+    bottom: 0;
 }
 
 .NavBarItem::before {

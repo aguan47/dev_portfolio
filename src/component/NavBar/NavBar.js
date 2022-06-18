@@ -1,7 +1,11 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { navBarVariant } from "../../framer-motion/variants";
 import classes from './NavBar.module.css';
 
 const items = ["HOME", "ABOUT ME", "PROJECTS", "EXPERIENCE", "EDUCATION", "CONTACT ME"];
+
+
 
 const NavBar = ({setActiveItem, active}) => {
     const navBarItems = items.map(item => {
@@ -16,11 +20,11 @@ const NavBar = ({setActiveItem, active}) => {
 
 
     return(
-        <nav className={classes.NavBar}>
+        <motion.nav className={classes.NavBar} initial="initial" animate="animate" variants={navBarVariant}>
             <ul>
                 {navBarItems}
             </ul>
-        </nav>
+        </motion.nav>
     );
 }
 
