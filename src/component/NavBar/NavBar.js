@@ -12,8 +12,8 @@ const NavBar = ({setActiveItem, active}) => {
         const listClass = (item === active) ? classes.Active : classes.NavBarItem;
 
         return(
-            <a href={`#${item}`}>
-                <li className={listClass} key={i} onClick={e => setActiveItem(item)}>
+            <a href={`#${item}`} key={i}>
+                <li className={listClass} onClick={e => setActiveItem(item)}>
                     <span className={classes.Items}>{item}</span>
                 </li>
             </a>

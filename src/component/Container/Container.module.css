@@ -1,6 +1,7 @@
 .Container {
     width: 100vw;
-    height: 100vh;
+    height: max-content;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 10% 2.5% 85% 2.5%;
 }

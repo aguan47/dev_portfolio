@@ -1,0 +1,15 @@
+.Contact {
+    grid-column: 3/4;
+    z-index: 1000;
+}
+
+.Contact h1 {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: "Futura Bold";
+}
+
+.Contact p {
+    font-size: 1.1rem;
+    margin: 0 0 2em 3.5em;
+}

@@ -1,5 +1,6 @@
 .Education {
     grid-column: 3/4;
+    height: max-content;
 }
 
 .Education h1 {

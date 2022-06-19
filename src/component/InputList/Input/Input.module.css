@@ -1,0 +1,60 @@
+@value colors: "../../../colors.css";
+@value primary-red, secondary-red from colors;
+
+
+.InputField {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1em 0 0 4em;
+}
+
+.Label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.Input, .Textarea {
+    font-size: 1.1rem;
+    background-color: #ebeff3;
+    padding: 1em 0.5em 1em 1em;
+    font-family: "Futura";
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.Textarea {
+    resize: none;
+    height: 20vh;
+}
+
+.Textarea:disabled, .Input:disabled {
+    cursor: not-allowed;
+}
+
+.Submit {
+    margin: 1em 0 1em 4.5em;
+    padding: 1em;
+    font-family: "Futura";
+    border: none;
+    font-weight: bold;
+    background-color: primary-red;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.5s ease-in-out;
+}
+
+.Submit:hover {
+    background-color: secondary-red;
+}
+
+.Submit:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+
+

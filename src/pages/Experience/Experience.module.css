@@ -1,5 +1,6 @@
 .Experience {
     grid-column: 3/4;
+    height: 100vh;
 }
 
 .Experience h1 {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NavBar from './component/NavBar/NavBar';
 import AboutMe from './pages/AboutMe/AboutMe';
+import ContactMe from './pages/ContactMe/ContactMe';
 import Education from './pages/Education/Education';
 import Experience from './pages/Experience/Experience';
 import Home from './pages/Home/Home';
@@ -53,6 +54,7 @@ function App() {
       <AboutMe setActiveItem={setActiveNavBar}/>
       <Experience setActiveItem={setActiveNavBar} experiences={experiences} />
       <Education setActiveItem={setActiveNavBar} educationalBg={educationalBg}/>
+      <ContactMe setActiveItem={setActiveNavBar}/>
     </>
   );
 }
