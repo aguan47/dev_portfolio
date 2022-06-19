@@ -1,0 +1,9 @@
+.Experience {
+    grid-column: 3/4;
+}
+
+.Experience h1 {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: "Futura Bold";
+}

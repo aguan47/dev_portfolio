@@ -2,6 +2,7 @@ import { useState } from 'react';
 import NavBar from './component/NavBar/NavBar';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Education from './pages/Education/Education';
+import Experience from './pages/Experience/Experience';
 import Home from './pages/Home/Home';
 
 
@@ -26,6 +27,21 @@ function App() {
       years: "2012-2016",
       otherDetails: ""
     }
+  ];
+
+  const experiences = [
+    {
+      title: "Razza Consulting Group, Inc",
+      details: "Web Developer",
+      years: "September 2021 - December 2021",
+      otherDetails: "We used ReactJS, ExpressJS, NodeJS, Docker and Google Cloud Platform as our tech stack"
+    },
+    {
+      title: "Razza Consulting Group, Inc",
+      details: "Software Developer Intern",
+      years: "June 2021 - August 2021",
+      otherDetails: "We used ReactJS, ExpressJS, NodeJS, and MySQL as our tech stack"
+    }
   ]
 
 
@@ -35,6 +51,7 @@ function App() {
       <NavBar active={activeNavBar} setActiveItem={setActiveNavBar}/>
       <Home setActiveItem={setActiveNavBar}/>
       <AboutMe setActiveItem={setActiveNavBar}/>
+      <Experience setActiveItem={setActiveNavBar} experiences={experiences} />
       <Education setActiveItem={setActiveNavBar} educationalBg={educationalBg}/>
     </>
   );
