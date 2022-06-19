@@ -1,0 +1,9 @@
+.Education {
+    grid-column: 3/4;
+}
+
+.Education h1 {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: "Futura Bold";
+}

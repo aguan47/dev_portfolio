@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useIntersectionObserver } from "react-intersection-observer-hook";
 import Container from '../../component/Container/Container';
-import { aboutMeHeaderVariant, aboutMeParagraph1Variant, aboutMeParagraph2Variant, aboutMeParagraph3Variant } from "../../framer-motion/variants";
+import { aboutMeHeaderVariant, aboutMeParagraph1Variant, aboutMeParagraph2Variant, aboutMeParagraph3Variant, headerVariant } from "../../framer-motion/variants";
 import classes from './AboutMe.module.css';
 
 const AboutMe = ({setActiveItem}) => {
@@ -30,7 +30,7 @@ const AboutMe = ({setActiveItem}) => {
     return(
         <Container>
             <div className={classes.AboutMe} ref={ref} id="ABOUT ME">
-                <motion.h1 className={classes.Header} initial="initial" animate={controlHeader} variants={aboutMeHeaderVariant}>Hello,</motion.h1>
+                <motion.h1 className={classes.Header} initial="initial" animate={controlHeader} variants={headerVariant}>Hello,</motion.h1>
                 <motion.p initial="initial" animate={controlPara1} variants={aboutMeParagraph1Variant}>
                     I am <span>Angelo L. Guan</span>, a fourth-year student from the  University of the Philippines Los Baños 
                     studying Computer Science. I'm a Full Stack Developer with a keen interest in developing high-quality 
@@ -43,7 +43,7 @@ const AboutMe = ({setActiveItem}) => {
                     doing side projects, studying new technology, and working for other companies. In addition, I apply the analytical skills that 
                     I acquired from university in order to create good experiences.
                 </motion.p>
-                <motion.p initial="initial" animate={controlPara3} variants={aboutMeParagraph3Variant}>If you have any inquiries, please contact <a href="#lol">me</a></motion.p>
+                <motion.p initial="initial" animate={controlPara3} variants={aboutMeParagraph3Variant}>If you have any inquiries, please contact <a href="#CONTACT ME">me</a></motion.p>
             </div>
         </Container>
     );

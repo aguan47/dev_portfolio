@@ -1,0 +1,37 @@
+@value colors: "../../colors.css";
+@value primary-red from colors;
+
+
+
+.Timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.Event::before {
+    content: "";
+    position: relative;
+    top: 0%;
+    left: -2.95%;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background: primary-red;
+    display: inline-block;
+}
+
+.Event{
+    border-left: 3px solid primary-red;
+    padding: 0 1em 1em 1em;
+    width: 100%;
+    margin: 0 0 0 5em;
+}
+
+
+@media screen and (min-width: 1920px) {
+    .Event::before {
+        left: -2.05%;
+    }
+}
