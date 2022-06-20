@@ -1,0 +1,25 @@
+@value colors: "../../colors.css";
+@value primary-red from colors;
+
+
+.Projects {
+    grid-column: 3/4;
+    max-height: max-content;
+}
+
+.Header{
+    font-size: 5rem;
+    font-style: italic;
+    font-family: "Futura Bold";
+}
+
+.Number{
+    position: relative;
+    bottom: 150%;
+    left: 70%;
+    transform: translate(5%, -100%);
+    color: primary-red;
+    opacity: 0.5;
+    font-size: 15rem;
+    font-style: normal;
+}
