@@ -18,3 +18,8 @@
 .Project span {
     font-family: "Futura";
 }
+
+.Logos {
+    display: flex;
+    align-items: center;
+}
