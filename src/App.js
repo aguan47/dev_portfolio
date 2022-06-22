@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import NavBar from './component/NavBar/NavBar';
+import SocialMedia from './component/SocialMedia/SocialMedia';
 import AboutMe from './pages/AboutMe/AboutMe';
 import ContactMe from './pages/ContactMe/ContactMe';
 import Education from './pages/Education/Education';
@@ -82,6 +83,7 @@ function App() {
   return (
     <>
       <NavBar active={activeNavBar}/>
+      <SocialMedia/>
       <Home setActiveItem={setActiveNavBar}/>
       <AboutMe setActiveItem={setActiveNavBar}/>
       <Projects setActiveItem={setActiveNavBar} projects={projects}/>

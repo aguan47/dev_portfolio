@@ -21,6 +21,7 @@
 
 .AboutMe p > a {
     font-family: "Futura";
+    color: black;
 }
 
 .AboutMe p > a:visited {

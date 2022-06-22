@@ -1,0 +1,38 @@
+.SocialMedia {
+    list-style: none;
+    position: fixed;
+    right: 0;
+    margin: 1em;
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+}
+
+.SocMedLink {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.SocialMedia > a {
+    text-decoration: none;
+    color: black;
+}
+
+.SocMedSpan {
+    width: 100%;
+    margin: 1em;
+    visibility: hidden;
+    transition: ease-in-out;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.SocialMedia:hover .SocMedSpan {
+    visibility: visible;
+    opacity: 1;
+}
+
+.SocMedLink img {
+    width: 20%;
+}
