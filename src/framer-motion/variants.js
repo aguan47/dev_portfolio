@@ -42,3 +42,13 @@ export const timelineVariant = {
     initial: { y: "100%", opacity: 0 },
     animate: { y: "0%", opacity: 1, transition: { delay: 0.5, duration: 0.5 } }
 }
+
+export const socialMediaVariant = {
+    initial: { y: "-100%" },
+    animate: { y: "0%"}
+}
+
+export const projectDetailsVariant = {
+    initial: {x: "-100%", opacity: 0},
+    animate: {x: "0%", opacity: 1, transition: {delay: 0.5, duration: 0.5}}
+}
