@@ -3,3 +3,9 @@
     height: auto;
     margin: 1em;
 }
+
+@media screen and (min-width: 1920px) {
+    .Logo {
+        width: 100px;
+    }
+}

@@ -37,3 +37,13 @@
     font-size: 0.75rem;
     letter-spacing: 0.4rem;
 }
+
+@media screen and (min-width: 1920px) {
+    .HomeDetails h1 {
+        font-size: 9rem;
+    }
+
+    .HomeDetails p {
+        font-size: 1.2rem;
+    }
+}

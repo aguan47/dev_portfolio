@@ -27,3 +27,14 @@
 .AboutMe p > a:visited {
     color: black;
 }
+
+
+@media screen and (min-width: 1920px) {
+    .Header {
+        font-size: 6rem;
+    }
+    
+    .AboutMe p {
+        font-size: 1.8rem;
+    }
+}

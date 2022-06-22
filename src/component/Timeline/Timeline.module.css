@@ -39,4 +39,12 @@
     .Event::before {
         left: -2.05%;
     }
+
+    .Event h3 {
+        font-size: 2rem;
+    }
+
+    .Event p {
+        font-size: 1.2rem;
+    }
 }
