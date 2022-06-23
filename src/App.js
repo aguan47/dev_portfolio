@@ -55,27 +55,43 @@ function App() {
       at the moment. Audify can help users record their intimate thoughts, and they can write a relevant title
       and caption for each voice journal. Other than that, the user can also classify each journal based on how
       they're currently feeling by changing the colors associated with the journal.`,
-      techStack: ["React", "Tailwind", "NodeJS", "Knex", "PostgreSQL", "Docker"]
+      techStack: ["React", "Tailwind", "NodeJS", "Knex", "PostgreSQL", "Docker"],
+      showCode: true,
+      sourceCodeUrl: "https://github.com/aguan47/audify",
+      showWebsite: false,
+      websiteUrl: ""
     },
     {
       projectName: "Better Note App",
       details: `It is a web app where users can easily save checklists and notes. The user can add as many tasks 
       as they want to their checklist, while they can write as many notes as they want. In addition, they can change 
       the colors of each note or checklist to make it more organized. Lastly, the web app has a responsive design.`,
-      techStack: ["CSS", "React"]
+      techStack: ["CSS", "React"],
+      showCode: true,
+      sourceCodeUrl: "https://github.com/aguan47/BetterNoteApp",
+      showWebsite: true,
+      websiteUrl: "https://aguan47.github.io/BetterNoteApp/"
     },
     {
       projectName: "Developer Portfolio",
       details: `This shows essential information about me such as my side projects, educational background, work experience
       and other contact information. 
       `,
-      techStack: ["CSS", "React"]
+      techStack: ["CSS", "React"],
+      showCode: true,
+      sourceCodeUrl: "https://github.com/aguan47/dev_portfolio",
+      showWebsite: true,
+      websiteUrl: "https://aguan47.github.io/dev_portfolio/"
     },
     {
       projectName: "Friendbook",
       details: `This is a Facebook clone done as part of Odin Project's Ruby on Rails curriculum. The website allows 
       users to create posts, like posts, and add friends.`,
-      techStack: ["CSS", "Ruby on Rails"]
+      techStack: ["CSS", "Ruby on Rails"],
+      showCode: true,
+      sourceCodeUrl: "https://github.com/aguan47/friendbook",
+      showWebsite: false,
+      websiteUrl: ""
     }
   ];
 

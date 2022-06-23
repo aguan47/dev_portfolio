@@ -1,0 +1,28 @@
+@value colors: "../../colors.css";
+@value primary-red from colors;
+
+
+.Button {
+    border: none;
+    margin: 1em 1em 1em 0;
+    cursor: pointer;
+    padding: 1em;
+    font-family: "Futura Bold";
+    color: primary-red;
+    border: 2px solid primary-red;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.Button:hover {
+    background-color: primary-red;
+    color: #fff;
+}
+
+.Button:disabled {
+    cursor: not-allowed;
+    background-color: #bbb;
+    border: 2px solid #bbb;
+    color: grey;
+}

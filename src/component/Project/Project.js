@@ -2,15 +2,17 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useIntersectionObserver } from 'react-intersection-observer-hook';
 import { headerVariant, projectDetailsVariant, timelineVariant } from '../../framer-motion/variants';
+import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
 import classes from './Project.module.css';
 
 const Project = ({project}) => {
-    const { projectName, details, techStack } = project;
+    const { projectName, details, techStack, showCode, sourceCodeUrl, showWebsite, websiteUrl } = project;
     const [ref, {entry}] = useIntersectionObserver({threshold: 0.25});
     const controlProjectName = useAnimation();
     const controlProjectDetails = useAnimation();
     const controlTechStack = useAnimation();
+    const controlButtons = useAnimation();
 
     const inView = entry && entry.isIntersecting;
     useEffect(() => {
@@ -18,6 +20,7 @@ const Project = ({project}) => {
             controlProjectName.start("animate");
             controlProjectDetails.start("animate");
             controlTechStack.start("animate");
+            controlButtons.start("animate");
         }
     }, [inView]);
 
@@ -35,6 +38,10 @@ const Project = ({project}) => {
                     techStack.map(tech => <Logo name={tech} alt={`Logo of ${tech}`} key={tech}/>)
                 }
                 </div>
+            </motion.div>
+            <motion.div className={classes.Options} initial="initial" animate={controlButtons} variants={timelineVariant}>
+                <Button clickHandler={() => window.open(sourceCodeUrl)} disabled={!showCode}>View source code</Button>
+                <Button clickHandler={() => window.open(websiteUrl)} disabled={!showWebsite}>View live website</Button>
             </motion.div>
         </div>
     );

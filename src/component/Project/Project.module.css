@@ -23,6 +23,10 @@
     align-items: center;
 }
 
+.Options {
+    margin: 1em 0 1em 0;
+}
+
 @media screen and (min-width: 1920px) {
     .Project h2 {
         font-size: 3rem;
