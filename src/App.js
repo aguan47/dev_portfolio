@@ -58,8 +58,8 @@ function App() {
       techStack: ["React", "Tailwind", "NodeJS", "Knex", "PostgreSQL", "Docker"],
       showCode: true,
       sourceCodeUrl: "https://github.com/aguan47/audify",
-      showWebsite: false,
-      websiteUrl: ""
+      showWebsite: true,
+      websiteUrl: "https://audify-frontend.herokuapp.com"
     },
     {
       projectName: "Better Note App",
