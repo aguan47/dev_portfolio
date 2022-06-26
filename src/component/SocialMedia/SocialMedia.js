@@ -20,7 +20,7 @@ const SocialMedia = () => {
                     <img src={LinkedInIcon} alt="Logo of Github"/>
                 </li>
             </a>
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1fEgIOxg_OaRucOpjd6KyrguYrkFG2YKO/view?usp=sharing">
                 <li className={classes.SocMedLink}>
                     <span className={classes.SocMedSpan}>DOWNLOAD RESUME</span>
                     <img src={DownloadIcon} alt="Logo of Github"/>
