@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dev_portfolio/static/css/main.94ce5ab5.css",
-    "main.js": "/dev_portfolio/static/js/main.f7d32647.js",
+    "main.css": "/dev_portfolio/static/css/main.03629abf.css",
+    "main.js": "/dev_portfolio/static/js/main.755cd2a5.js",
     "static/js/787.eef0f175.chunk.js": "/dev_portfolio/static/js/787.eef0f175.chunk.js",
     "static/media/material-icons-two-tone.woff": "/dev_portfolio/static/media/material-icons-two-tone.8e41f5e6fbad90e70672.woff",
     "static/media/material-icons-two-tone.woff2": "/dev_portfolio/static/media/material-icons-two-tone.c142818ceebfd170aa69.woff2",
@@ -33,12 +33,12 @@
     "static/media/linkedin-icon.svg": "/dev_portfolio/static/media/linkedin-icon.194bb3af0912d348762c0ac9f34c68eb.svg",
     "static/media/download-icon.svg": "/dev_portfolio/static/media/download-icon.be016a0602479299fcc70c9c26039c94.svg",
     "index.html": "/dev_portfolio/index.html",
-    "main.94ce5ab5.css.map": "/dev_portfolio/static/css/main.94ce5ab5.css.map",
-    "main.f7d32647.js.map": "/dev_portfolio/static/js/main.f7d32647.js.map",
+    "main.03629abf.css.map": "/dev_portfolio/static/css/main.03629abf.css.map",
+    "main.755cd2a5.js.map": "/dev_portfolio/static/js/main.755cd2a5.js.map",
     "787.eef0f175.chunk.js.map": "/dev_portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94ce5ab5.css",
-    "static/js/main.f7d32647.js"
+    "static/css/main.03629abf.css",
+    "static/js/main.755cd2a5.js"
   ]
 }
