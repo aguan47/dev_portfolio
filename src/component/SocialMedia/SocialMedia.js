@@ -14,18 +14,18 @@ const SocialMedia = () => {
                     <img src={GithubIcon} alt="Logo of Github"/>
                 </li>
             </a>
-            <a href='https://www.linkedin.com/in/angelo-guan-62816a208/'>
+            <a href='https://www.linkedin.com/in/angeloguan/'>
                 <li className={classes.SocMedLink}>
                     <span className={classes.SocMedSpan}>LINKEDIN</span>
                     <img src={LinkedInIcon} alt="Logo of Github"/>
                 </li>
             </a>
-            <a href="https://drive.google.com/file/d/1fEgIOxg_OaRucOpjd6KyrguYrkFG2YKO/view?usp=sharing">
+            {/* <a href="https://drive.google.com/file/d/1fEgIOxg_OaRucOpjd6KyrguYrkFG2YKO/view?usp=sharing">
                 <li className={classes.SocMedLink}>
                     <span className={classes.SocMedSpan}>DOWNLOAD RESUME</span>
                     <img src={DownloadIcon} alt="Logo of Github"/>
                 </li>
-            </a>
+            </a> */}
         </motion.ul>
     );
 }

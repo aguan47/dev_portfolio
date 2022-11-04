@@ -16,28 +16,16 @@ function App() {
       title: "University of the Philippines Los Baños",
       details: "BS Computer Science",
       years: "2018-2022",
-      otherDetails: "Magna Cum Laude candidate"
-    },
-    {
-      title: "STI College Sta. Cruz",
-      details: "Science, Technology, Engineering and Mathematics (STEM)",
-      years: "2016-2018",
-      otherDetails: "High Honors"
-    },
-    {
-      title: "Pedro Guevara Memorial National High School",
-      details: "Special Science Curriculum",
-      years: "2012-2016",
-      otherDetails: ""
+      otherDetails: "Magna Cum Laude"
     }
   ];
 
   const experiences = [
     {
-      title: "Razza Consulting Group, Inc",
-      details: "Web Developer",
-      years: "September 2021 - December 2021",
-      otherDetails: "We used ReactJS, ExpressJS, NodeJS, Docker and Google Cloud Platform as our tech stack"
+      title: "PayMaya Philippines, Inc",
+      details: "Cadet Engineer",
+      years: "August 2022 - Present",
+      otherDetails: "Started working as a Cadet Engineer whose responsibilities include developing a POC, and attending bootcamps"
     },
     {
       title: "Razza Consulting Group, Inc",
